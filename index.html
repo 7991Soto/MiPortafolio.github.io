@@ -1,265 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Armando Soto</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
-
-    <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
-    <style>
-        p {
-            font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
-
-        .foto-perfil {
-            height: 100%;
-            max-width: auto;
-            border-radius: 50%;
-            height: 400px;
-            width: 400px;
-        }
-
-
-        .icones {
-            padding-left: 5px;
-        }
-
-        .titulosBrancos {
-            text-decoration: underline;
-            text-underline-position: under;
-            padding-bottom: 20px;
-            text-transform: uppercase;
-            font-weight: 700;
-            color: white;
-        }
-
-        .titulosNegros {
-            text-decoration: underline;
-            text-underline-position: under;
-            padding-bottom: 20px;
-            text-transform: uppercase;
-            font-weight: 700;
-            color: #000000
-        }
-
-        .paragrafoBrancos {
-            color: white !important;
-        }
-
-
-        .jumbotron {
-            margin-bottom: 0px;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        p {
-            color: black !important;
-        }
-
-        .corPrimaria {
-            background-color: #000000d0;
-        }
-        
-        .itemMenu {
-            color: white;
-        }
-        
-        /* Media Queries */
-         @media(max-width: 768px){
-            header #branding,
-            header nav,
-            header nav li,
-            #newsletter h1,
-            #newsletter form,
-            #boxes .box,
-            article#main-col,
-            aside#sidebar{
-             float:none;
-             text-align:center;
-             width:100%;
-            }
-            header{
-             padding-bottom:20px;
-            }
-
-            #showcase h1{
-             margin-top:40px;
-             }
-
-            #newsletter button, .quote button{
-              display:block;
-              width:100%;
-             }
-
-             #newsletter form input[type="email"], .quote input, .quote textarea{
-               width:100%;
-               margin-bottom:5px;
-              }
-           }
-        
-    </style>
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-md navbar-light" style="background-color:#000000">
-        <a class="navbar-brand" href="#" style=color:white>Armando Soto</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
-            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExample04">
-            <ul class="navbar-nav mr-auto">
-
-            </ul>
-            <ul class="navbar-nav">
-                <li>
-                    <a href="#projetos" class="nav-link" style=color:white> Projetos</a>
-                </li>
-                <li>
-                    <a href="#sobre-mim" class="nav-link" style=color:white>Sobre mim</a>
-                </li>
-                <li>
-                    <a href="#contato" class="nav-link" style=color:white>Contato</a>
-                </li>
-            </ul>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Armando Soto">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!--link de los logos de los contatos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">//<span class="dosColores">AS--&gt;</span></span></h1>
         </div>
-    </nav>
+        <nav>
+          <ul>
+            <li class="current"><a href="about.html">Inicio</a></li>
+            <li><a href="about.html">Projetos</a></li>
+            <li><a href="sobremim.html">Sobre mim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <section class="jumbotron text-center corPrimaria">
-        <div class="container">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AFDK6gMp_1RQkCQL4B3mddB4UC1D0A0bsNL4wKFtRgm4BoDgW1xhJvM1B-6NR3Gdn9cuXYlzcbOzjeDHBNamoNSqa7T1VgK1SQ=w1920-h929" class="foto-perfil" alt="Responsive image">
-            <h1 class="jumbotron-heading" style="color:white;text-transform: uppercase;">Armando Soto</h1>
-            <p class="lead" style="color:white !important;">front-end dev • programming • productivity
-            </p>
-            <p>
-                <a href="#contato" class="btn btn-dark my-2">Contato</a>
-            </p>
-            <a href="https://wa.me/+5551981175376"><i style="color:white" class="fab fa-whatsapp"></i></a>
-            <a href="tel:+5551981175376"><i style="color:white" class="fa fa-phone"></i></a>
-            <a href="mailto:7991soto@gmail.com"><i style="color:white" class="fa fa-envelope"></i></a>
-        </div>
-    </section>
-    <!-- Projects -->
-    <div class="album py-5 bg-light " id="projetos">
-        <div class="container">
-            <h2 class="text-center jumbotron-heading titulosNegros">Projetos</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="https://lh3.googleusercontent.com/drive-viewer/AFDK6gO7cRImignA5MywTdLJycHP_plYiBoUiJzOVf2DYeItxc3D8Xr5MbhfTFTFjsJFWYbL_7dGg0TqjujE8UdtPkE6nOKvpw=w1920-h892" data-holder-rendered="true"
-                            style="height: 225px; width: 100%;max-width: 100%; display: block;">
-                        <div class="card-body">
-                            <p class="card-text">Este foi meu primer projeto, usando as tecnologias A, B para o meu treinamento. Me dediquei para aprender a usar essas tecnologias e conseguir realizar esse projeto.
-                            </p>
-                            <ul>
-                                <li>html</li>
-                                <li>C#</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    
-                                    
-                                    <a href="https://7991Soto.github.io/Mirarcodigo.github.io" target="_blank" class="btn btn-sm btn-outline-primary">Ver Código</a>
-                                    
-                                </div>
-                                <small class="text-muted">Mi portafolio</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="https://lh3.googleusercontent.com/drive-viewer/AFDK6gMVKSbVd8U0DU8SazTYWHHzDInBwbkg5MJRCOjAzPwV0PyO57zoAEUgCmAnJp9In1lMzv3PajAdkoihvedMMs0O4c739A=w1920-h892" data-holder-rendered="true"
-                            style="height: 225px; width: 100%; display: block;">
-                        <div class="card-body">
-                            <p class="card-text">Esse é um projeto que desenvolvi usando as tecnologias seguinte.
-                            </p>
-                            <ul>
-                                <li>html</li>
-                                <li>C#</li>
-                                <li>Javascript</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://7991soto.github.io/CalculadoraSimple.github.io/" target="_blank" class="btn btn-sm btn-outline-success">Ver Projeto</a>
-                                    <a href="https://github.com/7991Soto/CalculadoraSimple.github.io" target="_blank" class="btn btn-sm btn-outline-primary">Ver Código</a>
-                                </div>
-                                <small class="text-muted">Calculadora Web</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="https://lh3.googleusercontent.com/drive-viewer/AFDK6gOAhSK2VCC5Zz6hUd4XXniq4toVa7uXNoV3adEqNWiB-zfee3ur1vP8wXb4inORAYUnKhpvOjwKQaK10P1czXleOT_eSQ=w1920-h929" data-holder-rendered="true"
-                            style="height: 225px; width: 100%; display: block;">
-                        <div class="card-body">
-                            <p class="card-text">Esse foi meu segundo projeto, um cubo giratório. Eu coloquei umas fotos minha, fiz por entretenimento. É uma peça pequena e simples, mas é um projeto que pode dar muitas oportunidades de aprendizado e desenvolvimento. É divertido ver o cubo girar enquanto se olhia para as imagens. É uma experiência única que ajuda a motivador para continuar criando. Também dando a chance de melhorar as habilidades. Espero que esse projeto seja apenas um dos primeiro de muitos outros.
-                            </p>
-                            <ul>
-                                <li>html</li>
-                                <li>C#</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://7991soto.github.io/CuboRotatorio.github.io/" target="_blank" target="_blank" class="btn btn-sm btn-outline-success">Ver Projeto</a>
-                                    <a href="https://github.com/7991Soto/CuboRotatorio.github.io/blob/main/Index.html" target="_blank" class="btn btn-sm btn-outline-primary">Ver Código</a>
-                                </div>
-                                <small class="text-muted">Cubo rotatorio</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="jumbotron text-center corPrimaria" id="sobre-mim">
-        <div class="container">
-            <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
-            <p class="lead paragrafoBrancos">Sou um profissional autodidata que busca estar sempre em dia com as novidades
-                 da área de tecnologia e inovação. Não tenho experiência laboral com desenvolvimento front-end. Busco
-                  melhorar minhas habilidades e adquirir novas habilidades para enriquecer meu currículo e estou pronto para oportunidades. </p>
-        </div>
-    </section>
-    <section Id="contato" class="corPrimaria">
-        <div class="corPrimaria">
-            <div class="container-fluid">
-                <h3 style="padding-top:90px;" class="text-center titulosBrancos">Disponível para oportunidades</h3>
-                <h4 style="padding-bottom:90px;margin-bottom: 0px;color:white;" class="text-center"><a
-                        href="mailto:7991soto@gmail.com">7991soto@gmail.com👈</a></h4>
-            </div>
-        </div>
+    <section id="showcase">
+      <div class="container">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOSsrRjJMQpMW6QHnBkj5Ng133l8foFZZdgCz9VTvT-GlRzyDePaByZkooX0SH505jLedEkQlDgYzB4jSXX_LXFW2ieDQw=w1920-h892" alt="Mi foto de perfil">
+       <p><h3 class="hh3">OLÁ, EU SOU</h3><br><h2>ARMANDO SOTO</h2> </p> <!--UI/UX Design Colocar despues de aprender-->
+       <p>• Fron-end Developer • Productivity </p> <!--UI/UX Design Colocar despues de aprender-->
+       <p>
+        <a href="#" class="BottomContato">Contato</a>
+       </p>
+       <a href="#"><li class="fab fa-whatsapp"></li></a>
+       <a href="#"><li class="fa fa-envelope"></li></a>
+       <a href="#"><li class="fa fa-phone"></li></a>
+      </div>
     </section>
 
-    <footer class="text-center" style="background-color:#000000d0;padding:0px; margin:0px">
-        <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">Feito 22-11-2022
-        </p>
+    <section id="newsletter">
+      <div class="container">
+        <link rel="stylesheet" href="style.cs">
+<div id="cont-cubo">
+  <div class="cubo">
+    <div class="cara1"><img alt="" src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOQUHRbMXdL3k9UrOR5AdkoRQNUSBG8uRH_TS5xNkhKEaT2vMoM5df-Ma6DI3I5IOXQXltGoLCLH_ZFYWiFCvDAXc4NtDw=w1920-h929"></div>
+    <div class="cara2"><img alt="" src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOSzez4A971DRNqKE_igaJY8mgd07XjgAijr-SShOiTUUt0_nXDLeptEKBEdGxJCCcG9SQGll-D1fY7RZCddxzlAx9gN-w=w1920-h929"></div>
+    <div class="cara3"><img alt="" src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOQYvsbdIDo3om5VDO2kTGj9EMPvst2i4z5OyQq5cUuNHc8LjPiQK0wUBHyz8qPuQyK3SMEzA78XAKreplLwsYz0CoNfNw=w1920-h929"></div>
+    <div class="cara4"><img alt="" src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOR8PMZFChpVefeg6-Q3fYkIo1g_NTWtL1PGz5RUi6EmwbzMG6emvZfqkCvZ6O-rXmluyzwhClllvcZSqxRw07pXdyoPOg=w1920-h929"></div>
+    <div class="cara5"><img alt="" src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ6xSGYXxBYsZfl8tuQXADjQ7ptVX3BNtAZ8WxBKxJ6mPp4yu6MZCUbpPRRF4JSu8Ujtq_b3Go1es87V256gb7SXxf1bg=w1920-h929"></div>
+    <div class="cara6"><img alt="" src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOS94nY0Y4WOHsDbFO8AnyVb34IYYRIu0qXL9H2j3AbW339xQYpQJ5okM4_4ftVgsi79o8umz9wbFfMR4G_OH0RNEIYZ1Q=w1920-h929"></div>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ6xSGYXxBYsZfl8tuQXADjQ7ptVX3BNtAZ8WxBKxJ6mPp4yu6MZCUbpPRRF4JSu8Ujtq_b3Go1es87V256gb7SXxf1bg=w1920-h929">
+          <h3>HTML5</h3>
+          <p>
+            Estudei HTML5 para desenvolver páginas web. Aprendi conceitos básicos, como tags, atributos e estrutura, bem como elementos mais complexos, como imagens, vídeos e tabelas. Em seguida, desenvolvi habilidades de escrita para alcançar o nível intermediário.</p>
+        </div>
+        <div class="box">
+          <img src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOR8PMZFChpVefeg6-Q3fYkIo1g_NTWtL1PGz5RUi6EmwbzMG6emvZfqkCvZ6O-rXmluyzwhClllvcZSqxRw07pXdyoPOg=w1920-h929">
+          <h3>CSS</h3>
+          <p>
+            Aprendi CSS vendo tutoriais e praticando codificação, bem como estudando os fundamentos do HTML5. Concentrei-me em adquirir conhecimentos práticos para projetar e construir sites interativos com aparência profissional.</p>
+        </div>
+        <div class="box">
+          <img src="https://lh3.googleusercontent.com/drive-viewer/AAOQEOQUHRbMXdL3k9UrOR5AdkoRQNUSBG8uRH_TS5xNkhKEaT2vMoM5df-Ma6DI3I5IOXQXltGoLCLH_ZFYWiFCvDAXc4NtDw=w1920-h929">
+          <h3>Javascript</h3>
+          <p>Tenho conhecimento de JavaScript e estudei a lógica por trás do idioma. Embora saiba como construir estruturas básicas e consiga compreender a estrutura de um programa, ainda não tenho experiência no desenvolvimento de códigos profundo. Estou comprometido em aprender os conceitos e habilidades necessários para escrever códigos em JavaScript com fluidez.</p>
+        </div>
+    </section>
+    <footer>
+      <!--colocar abajo-->
     </footer>
-
-</body>
-
+  </body>
 </html>
